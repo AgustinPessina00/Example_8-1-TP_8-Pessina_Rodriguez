@@ -14,8 +14,15 @@
 
 //=====[Declaration and initialization of public global objects]===============
 
+/*  GRUPO:  Pines de la placa núcleo asociados módulo de control de brillo.
+            El pin A0 es una entrada analógica que simula ser el sensor de luz.
+*/
 DigitalOut RGBLed[] = {(PB_4), (PA_0), (PD_12)};
 
+/*  GRUPO:  Punto 7.b) Se declara el objeto que instancia la Clase Ticker, que maneja la interrupción.
+            En este caso, se introduce el uso del ticker para el manejo de interrupciones e implementación del PWN.
+            Enciende el LED según el estado del PWM.
+*/
 Ticker tickerBrightControl;
 
 //=====[Declaration and initialization of private global objects]===============
